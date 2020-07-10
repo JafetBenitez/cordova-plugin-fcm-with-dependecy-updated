@@ -7,10 +7,10 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.util.Log;
+
 import java.util.HashMap;
 import java.util.Map;
 import android.os.Build;
-
 
 public class FCMPluginActivity extends Activity {
     private static String TAG = "FCMPlugin";
@@ -68,7 +68,6 @@ public class FCMPluginActivity extends Activity {
 	public void onStop() {
 		super.onStop();
 		Log.d(TAG, "==> FCMPluginActivity onStop");
-
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             final NotificationManager notificationManager = (NotificationManager) this.getSystemService(Context.NOTIFICATION_SERVICE);
